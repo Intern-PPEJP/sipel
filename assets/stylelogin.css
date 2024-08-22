@@ -1,0 +1,92 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('bglogin.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    flex-direction: column;
+}
+
+.login-logo {
+    margin-bottom: 15px; /* Jarak antara logo dan kotak login */
+    text-align: center;
+}
+
+.login-logo img {
+    height: auto;
+    width: 200px;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    margin: center;
+}
+
+.login-box h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin: center;
+}
+
+.input-group .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.login-footer p {
+    margin: 5px 0; /* Mengurangi jarak antar paragraf */
+}
