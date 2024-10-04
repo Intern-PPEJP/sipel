@@ -37,11 +37,6 @@
                     </li>
                     <li class="active treeview">
                         <a href="#">
-                            <i class="fas fa-user"></i> <span>Rekrutmen Peserta</span>
-                        </a>
-                    </li>
-                    <li class="active treeview">
-                        <a href="#">
                             <i class="fas fa-users"></i> <span>Peserta</span>
                         </a>
                     </li>
