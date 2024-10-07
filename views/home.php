@@ -27,6 +27,6 @@ if (session_status() == PHP_SESSION_NONE) {
         <h1>Ini adalah halaman peserta</h1>
     </main> -->
 
-    <?php include 'footer.php'; ?>
+    <!-- <?php include 'footer.php'; ?> -->
 </body>
 </html>
