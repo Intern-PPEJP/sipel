@@ -13,12 +13,12 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--my style-->
-    <link rel="stylesheet" href="assets/stylenew.css">
+    <link rel="stylesheet" href="style/stylenew.css">
 </head>
 <body>
     <div class="sidebar">
         <div class="logo-details">
-            <img src="assets/logo-kemendag.png">
+            <img src="image/logo-kemendag.png">
             <span class="logo_name">SI PPEJP</span>
         </div>
         <ul class="nav-links">
@@ -201,14 +201,17 @@
             <li>
                 <div class="profile-details">
                     <div class="profile-content">
-                        <img src="assets/moana.jpg" alt="Profile">
+                        <img src="image/moana.jpg" alt="Profile">
                     </div>
                     
                     <div class="name-job">
                         <div class="nama">Moana</div>
                         <div class="job">Admin</div>
                     </div>
-                    <i class='bx bx-log-out'></i>
+                    <a href="login.php">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+
                 </div>
             </li>
         </ul>
