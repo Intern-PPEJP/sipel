@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" name="password" placeholder="Password" required>
                     <span class="toggle-password"><i class="fas fa-eye"></i></span>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">Masuk</button>
             </form>
         </div>
         <div class="login-footer">
