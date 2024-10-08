@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-container">
         <div class="login-box">
         <div class="login-logo">
-            <img src="newlogo.png" alt="Logo">
+            <img src="image/newlogo.png" alt="Logo">
         </div>
             <h1>SISTEM INFORMASI PPEJP</h1>
             <?php if($error != ''): ?>
