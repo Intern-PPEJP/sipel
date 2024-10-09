@@ -4,7 +4,7 @@ session_start();
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
-$db_name = 'ppei_sip20';
+$db_name = 'ppejp_new';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
@@ -47,21 +47,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style/stylelogin.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <style>
     body{
         background-image: url("image/bglogin.jpg");
     }
+
+    .error {
+        color: red;
+        font-size: small;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 </style>
+
 <body>
     <div class="login-container">
         <div class="login-box">
         <div class="login-logo">
-            <img src="newlogo.png" alt="Logo">
+            <img src="image/newlogo.png" alt="Logo">
         </div>
             <h1>SISTEM INFORMASI PPEJP</h1>
-            <?php if($error != ''): ?>
+            <!-- <?php if($error != ''): ?>
                 <div class="error"><?php echo $error; ?></div>
+            <?php endif; ?> -->
+            <?php if($error != ''): ?>
+            <div class="error"><?php echo $error; ?></div> <!-- Menambahkan class="error" -->
             <?php endif; ?>
+
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
                 <div class="input-group">
@@ -71,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" name="password" placeholder="Password" required>
                     <span class="toggle-password"><i class="fas fa-eye"></i></span>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">Masuk</button>
             </form>
         </div>
         <div class="login-footer">
@@ -81,14 +94,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <script>
-         function togglePassword() {
-            var passwordField = document.getElementById("password");
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordField = document.querySelector('input[name="password"]');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Ganti ikon
+            if (type === 'password') {
+                togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
             } else {
-                passwordField.type = "password";
+                togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
             }
-        }
+        });
     </script>
 </body>
 </html>
