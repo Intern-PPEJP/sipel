@@ -201,12 +201,12 @@
             <li>
                 <div class="profile-details">
                     <div class="profile-content">
-                        <img src="image/moana.jpg" alt="Profile">
+                        <img src="image/default-profile.jpeg" alt="Profile">
                     </div>
                     
                     <div class="name-job">
-                        <div class="nama">Moana</div>
-                        <div class="job">Admin</div>
+                        <div class="nama"><?php echo htmlspecialchars($_SESSION['username']); ?></div>
+                        <!-- <div class="job">Admin</div> -->
                     </div>
                     <a href="login.php">
                         <i class='bx bx-log-out'></i>
