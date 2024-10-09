@@ -1,10 +1,12 @@
 <?php
+
 $host = "localhost";
 $user = "root";
 $pass = "";
 $name = "ppejp_new";
 
-$koneksi = mysqli_connect($host, $user, $pass, $name);
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (mysqli_connect_errno()) {
     echo "Koneksi database mysqli gagal!!! : " . mysqli_connect_error();
 }
