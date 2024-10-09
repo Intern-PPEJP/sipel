@@ -4,7 +4,7 @@ session_start();
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
-$db_name = 'ppei_sip20';
+$db_name = 'ppejp_new';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 

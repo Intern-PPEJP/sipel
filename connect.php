@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$name = "ppei_sip20";
+$name = "ppejp_new";
 
 $koneksi = mysqli_connect($host, $user, $pass, $name);
 if (mysqli_connect_errno()) {
